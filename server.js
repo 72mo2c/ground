@@ -33,6 +33,8 @@ app.use(helmet());
 const allowedOrigins = [
   'http://localhost:3000',  // تطبيق العملاء
   'http://localhost:3001',  // لوحة التحكم المنفصلة
+   'tauri://localhost',                
+  'https://tauri.localhost',   
   process.env.CORS_ORIGIN   // عنوان مخصص من .env
 ].filter(Boolean);
 
